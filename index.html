@@ -1,67 +1,652 @@
----
-title: working example of a content page with tabbed interface
----
 
-<p>Working example of a generic content page with tabbed interface </p>
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Payment options for the type of payment you are making – Payments to the CRA – Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="robots" content="noindex">
+<!-- Meta data --> 
+<!-- Meta data--> 
+<!-- Load closure template scripts --> 
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/cdts/compiled/soyutils.js"></script> 
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/cdts/compiled/wet-en.js"></script>
+<link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/méli-mélo/2023-10-mount-revelstoke.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+<!-- Write closure template --> 
+<script type="text/javascript">
+         document.write(wet.builder.refTop({
+         }));
+      </script>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css"/>
+<link href="../css/custom.css" rel="stylesheet">
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<div id="def-top"> </div>
+<!-- Write closure template --> 
+<script type="text/javascript">
+         var defTop = document.getElementById("def-top");
+         defTop.outerHTML = wet.builder.top({
+           lngLinks: [{
+         
+             lang: "fr",
+             href: "#",
+             text: "Français"
+           }],
+           breadcrumbs: [{
+             title: "Canada.ca",
+             href: "https://www.canada.ca/en.html"
+           }, {
+             title: "Canada Revenue Agency",
+             href: "../cra.html"
+           } , {
+             title: "Payments to the CRA",
+             href: "../index.html"
+           }
+           , {
+             title: "Make a payment",
+             href: "index.html"
+           }              
+		   ],
+           search: true,
+           siteMenu: true,
+           showPreContent: true
+         });
+      </script>
+<main role="main" property="mainContentOfPage" class="container experimental">
+  <h1 property="name" id="wb-cont" dir="ltr"><span class="stacked" role="text"><span>Payment options for the type of payment you are making</span>: <span>Payments to the CRA</span></span></h1>
+	  <p>To see what options are available for the specific payment you are making, answer a few questions about your situation.</p>
+  <p>Once you make a selection, <strong>scroll down</strong> to see all the options.</p>
+  <form id="pymntsfrm" class="checkbox-lg gc-font-2019">
+    <div class="wb-fieldflow" data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
+      <p>What type of payment are you making?</p>
+      <ul>
+        <li>Personal income tax (T1)
+          <div class="wb-fieldflow-sub" data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
+            <p>What is the personal income tax payment for?</p>
+            <ul>
+              <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>A balance due or tax debt</li>
+              <li>An instalment payment (current-year taxes)
+                <div class="wb-fieldflow-sub" data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
+                  <p>How many instalment payments would you like to make?</p>
+                  <ul>
+                    <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, #instal-alert, #instal-indv, .third-party-alert", "class": "hidden", "live": true}]'>One instalment payment</li>
+                    <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, #instal-alert, #instal-indv, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-atm,#debit-card-cra,#debit-card-canadapost,#wire-transfer-pymnt,#bank-account-counter-int,#cash-pymnt", "class": "hidden", "live": true}]'>Multiple scheduled payments</li>
+                  </ul>
+                </div>
+           </li>
+            </ul>
+          </div>
+     </li>
+        <li>Corporate income tax (T2)
+          <div class="wb-fieldflow-sub" data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
+            <p>What is the corporate income tax payment for?</p>
+            <ul>
+              <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>An amount due at filing or a debt</li>
+              <li>An instalment payment (current-year taxes)
+                <div class="wb-fieldflow-sub" data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
+                  <p>How many corporate instalment payments would you like to make?</p>
+                  <ul>
+                    <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, #instal-alert, #instal-corp, .third-party-alert", "class": "hidden", "live": true}]'>One instalment payment</li>
+                    <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, #instal-alert, #instal-corp, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-atm,#debit-card-cra,#debit-card-canadapost,#wire-transfer-pymnt,#bank-account-counter-int, #cash-pymnt", "class": "hidden", "live": true}]'>Multiple scheduled payments</li>
+                  </ul>
+                </div>
+           </li>
+            </ul>
+          </div>
+     </li>
+        <li>GST/HST remittance
+          <div class="wb-fieldflow-sub" data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
+            <p>What is the GST/HST payment for?</p>
+            <ul>
+              <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results", "class": "hidden", "live": true}]'>A remittance due or debt</li>
+              <li>As an instalment payment (due to change in  period)
+                <div class="wb-fieldflow-sub" data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
+                  <p>How many GST/HST instalment payments would you like to make?</p>
+                  <ul>
+                    <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, #instal-alert, #instal-gst", "class": "hidden", "live": true}]'>One instalment payment</li>
+                    <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, #instal-alert, #instal-gst, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-atm,#debit-card-cra,#debit-card-canadapost,#wire-transfer-pymnt,#bank-account-counter-int,#cash-pymnt", "class": "hidden", "live": true}]'>Multiple scheduled payments</li>
+                  </ul>
+                </div>
+           </li>
+            </ul>
+          </div>
+     </li>
+        <li>Payroll source deductions
+          <div class="wb-fieldflow-sub" data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
+            <p>What is the payroll source deduction payment for?</p>
+            <ul>
+              <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results", "class": "hidden", "live": true}]'>An amount due or a balance owing from an assessment</li>
+            </ul>
+          </div>
+     </li>
+        <li>Other benefit, tax, fee or amount owing
+          <div class="wb-fieldflow-sub" data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
+            <div class="wb-fieldflow-header">
+              <p class="wb-fieldflow-label"><span id="paymentToCRA" aria-describedby="paymentToCRA paymentNotCRA">Should you make the payment to the CRA?</span></p>
+              <div class="gc-font-2019">
+                 <details>
+		<summary>Payments the CRA does <strong>not</strong> accept</summary>	
+			            <div id="paymentNotCRA">       <p>The CRA does not accept all payments for other government departments. If you're making a payment for an item in this list, select <strong>no</strong>.</p>
+                  <h2 class="h3 mrgn-tp-sm">Employment and Social Development Canada (ESDC)</h2>
+                  <p>Amounts that should be repaid to ESDC include:</p>
+                  <ul>
+                    <li>Canada Apprentice Loan (CAL)</li>
+                    <li>Canada Education Savings Programs (CESP)</li>
+                    <li>Canada Emergency Response Benefit (CERB) issued through EI</li>
+                    <li>Canada Pension Plan (CPP)</li>
+                    <li>Canada Student Loan (CSL)</li>
+                    <li>Employment Insurance (EI)</li>
+                    <li>Family Caregiver Benefit</li>
+                    <li>Grants and Contributions (G&amp;C)</li>
+                    <li>Labour programs</li>
+                    <li>Operations and Maintenance (O&amp;M)</li>
+                    <li>Parents of Murdered or Missing Children (PMMC)</li>
+                    <li>Temporary Foreign Workers Program (TFWP)</li>
+                    <li>Training Allowance (TAPS)</li>
+                    <li>Wage Earner Protection Program (WEPP)</li>
+                  </ul>
+   <h2 class="h3">Canada Border Service Agency (CBSA)</h2>
+                  <p>Amounts that should be repaid to CBSA include:</p>
+                  <ul>
+                    <li>Customs duties</li>
+                  </ul>
+				    </div>
+                </details>
+              </div>
+            </div>
+            <ul>
+              <li>Yes
+                <div class="wb-fieldflow-sub" data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
+                  <p>Are you making the payment on behalf of:</p>
+                  <ul>
+                    <li>An individual
+                      <div class="wb-fieldflow-sub"  data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
+                        <div class="wb-fieldflow-header">
+                          <p class="wb-fieldflow-label">What type of payment (or repayment) is being made?</p>
+                        </div>
+                        <ul>
+				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert, #benefit-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-cra", "class": "hidden", "live": true}]'>Advanced Canada Workers Benefit</li>
+                          <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #benefit-alert", "class": "hidden", "live": true}]'>Canada Child Benefit (CCB)</li>
+				 <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #benefit-alert", "class": "hidden", "live": true}]'>Canada dental benefit</li>
+				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert, #benefit-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-cra", "class": "hidden", "live": true}]'>Canada Carbon Rebate (CCR)/Climate Action Incentive (CAI)</li>
+				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #covid-alert, #covid-pa-indv", "class": "hidden", "live": true}]'>COVID-19 individual benefits</li>
+				 <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-counter-cdn, #bank-account-cra, #debit-card-cra, #collections-alert", "class": "hidden", "live": true}]'>Garnishment on behalf of a worker</li>
+                                      <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #benefit-alert", "class": "hidden", "live": true}]'>GST/HST credit</li>
+				<li>Non-resident tax
+                            <div class="wb-fieldflow-sub"  data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
+                              <p>What type of non-resident individual payment are you making?</p>
+                              <ul>
+                                <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Part XIII (thirteen) withholding tax</li>
+                                <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-nonres-indv-unsure", "class": "hidden", "live": true}'>Other/Unsure</li>
+                              </ul>
+                            </div>
+                       </li>
+				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>One time top-up to Canada housing benefit</li>
+				 <li>Provincial credits
+                            <div class="wb-fieldflow-sub"  data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
+                              <p>Provincial credit payment for:</p>
+                              <ul>
+                                <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #benefit-alert", "class": "hidden", "live": true}]'>Alberta credits</li>
+                                <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #benefit-alert", "class": "hidden", "live": true}]'>Ontario credits</li>
+				       <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-cra", "class": "hidden", "live": true}]'>Nunavut Carbon Credit</li>
+                                <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-outside-unsure", "class": "hidden", "live": true}'>All other provinces</li>
+                              </ul>
+                            </div>
+                       </li>
+				 <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-online, #bank-account-counter-cdn, #bank-account-atm", "class": "hidden", "live": true}]'>Tax Free Savings Account (TFSA)</li>
+                          <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Underused Housing Tax</li>
+				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #benefit-alert", "class": "hidden", "live": true}]'>Universal Child Care Benefit (UCCB)</li>
+                          <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-outside-unsure", "class": "hidden", "live": true}'>None of the above</li>
+                        </ul>
+                      </div>
+                 </li>
+                    <li>A business or corporation
+                      <div class="wb-fieldflow-sub"  data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
+                        <div class="wb-fieldflow-header">
+                          <p class="wb-fieldflow-label">What type of payment (or repayment) is being made?</p>
+                        </div>
+                        <ul>
+				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Air travellers Security Charge</li>
+				 <li>COVID-19 wage or rent subsidy
+                            <div class="wb-fieldflow-sub"  data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
+                              <p>Is the payment for CEWS?</p>
+                              <ul>
+                                <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Yes</li>
+                                <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #covid-alert, #covid-pa-busn", "class": "hidden", "live": true}]'>No</li>
+                              </ul>
+                            </div>
+                       </li>
+				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Excise duties</li>
+                          <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Excise tax (including Insurance premiums)</li>
+                           <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Fuel charge</li>
+			   <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-counter-cdn, #bank-account-cra, #debit-card-cra, #collections-alert", "class": "hidden", "live": true}]'>Garnishment on behalf of a worker</li>
+				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-cra, #bank-account-atm", "class": "hidden", "live": true}]'>Information Return (RZ) penalty</li>
+                          
+                         
+                          <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Luxury tax</li>
+                               <li>Non-resident tax
+                            <div class="wb-fieldflow-sub"  data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
+                              <p>What type of non-resident business or corporate payment are you making?</p>
+                              <ul>
+                                <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Part XIII (thirteen) withholding tax</li>
+                                <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-nonres-corp-unsure", "class": "hidden", "live": true}'>Other/Unsure</li>
+                              </ul>
+                            </div>
+                       </li>
+                          <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#debit-card-canadapost, #cash-pymnt", "class": "hidden", "live": true}]'>Softwood lumber products export charge</li>
+                            <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Underused Housing Tax</li>
+				<li>Workers  premiums
+                            <div class="wb-fieldflow-sub"  data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
+                              <p>Workers board premiums for:</p>
+                              <ul>
+                                <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Nova Scotia Workers' Compensation Board</li>
+                                <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-counter-cdn, #bank-account-counter-int, #bank-account-atm, #bank-account-online, #credit-card-pymt, #debit-card-pymnt, #wire-transfer-pymnt,#bank-account-counter-int, #cheque-pymnt, #online-transfer-pymnt, #cash-pymnt, #collections-alert", "class": "hidden", "live": true}]'>Workplace Safety and Insurance Board for Ontario</li>
+                              </ul>
+                            </div>
+                       </li>
+                        
+                         
+                         
+                     
+                          <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-outside-unsure", "class": "hidden", "live": true}'>None of the above</li>
+                        </ul>
+                      </div>
+                 </li>
+                    <li>A charity
+                      <div class="wb-fieldflow-sub"  data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
+                        <p>What type of charity payment are you making?</p>
+                        <ul>
+                          <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-pymnt, #bank-account-cra, #credit-card-pymt, #debit-card-pymnt, #wire-transfer-pymnt,#bank-account-counter-int, #online-transfer-pymnt, #cash-pymnt, #collections-alert", "class": "hidden", "live": true}]'>Re-register a charity</li>
+                         <!-- <li>Penalty on a charity</li>//-->
+                        </ul>
+                      </div>
+                 </li>
+                    <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>A trust (T3)</li>
+                    <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-outside-unsure", "class": "hidden", "live": true}'>Unsure</li>
+                  </ul>
+                </div>
+           </li>
+              <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-outside-payment", "class": "hidden", "live": true}'>No</li>
+              <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-outside-unsure", "class": "hidden", "live": true}'>Unsure</li>
+            </ul>
+          </div>
+     </li>
+      </ul>
+    </div>
+  </form>
+  
+  <!--alerts //-->
+  <div id="answer-outside-payment" class="alert-hide-reset hidden">
+    <div class="alert alert-info">
+      <h2 class="h3" tabindex="0"><small>Your result is:</small><br>
+        You need to send your payment to the correct department or agency</h2>
+      <p>Other areas you may need to pay:</p>
+      <ul class="list-unstyled">
+        <li><strong>For ESDC</strong>:<br> To find out how to make payments to Employment and Social Development Canada (ESDC), visit: <a href="https://www.canada.ca/en/employment-social-development/programs/ei/ei-list/overpayments/repayments.html#instructions">Payment instructions for ESDC</a>
+     </li>
+        <li><strong>For CBSA:</strong><br>To find out how to make payments to Canada Border Services Agency (CBSA), visit: <a href="https://www.cbsa-asfc.gc.ca/prog/arl-glcc/pay-paie-eng.html#a05">How to pay the CBSA</a>
+     </li>
+      </ul>
+    </div>
+  </div>
+  <div id="answer-outside-unsure" class="alert-hide-reset hidden">
+    <div class="alert alert-info">
+      <h2 class="h3" tabindex="0"><small>Your result is:</small><br>
+        You may need to contact the CRA</h2>
 
-<h2>Minimum requirement</h2>
-<ul>
-  <li>Create a content page with a tabbed interface</code></li>
-  <li>re-creating the issue locally with a working example using generic content and existing GCWeb and WET-BOEW examples. </li>
-</ul>
+      <p>Call the benefits line to determine where to send your payment.</p>
+      <ul class="list-unstyled" data-ajax-replace="https://www.canada.ca/en/revenue-agency/corporate/contact-information.html#prs-ph-12>li:not(:last-child)">
+        <li><a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information.html">CRA contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="answer-nonres-indv-unsure" class="alert-hide-reset hidden">
+    <div class="alert alert-info">
+      <h2 class="h3" tabindex="0"><small>Your result is:</small><br>
+        You may need to contact the CRA</h2>
+      <p>Call the non-resident individual phone line to determine where to send your payment.</p>
+      <ul class="list-unstyled" data-ajax-replace="https://www.canada.ca/en/revenue-agency/corporate/contact-information.html#int-ph-01">
+        <li><a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information.html#int-01">CRA non-resident individual phone number</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="answer-nonres-corp-unsure" class="alert-hide-reset hidden">
+    <div class="alert alert-info">
+      <h2 class="h3" tabindex="0"><small>Your result is:</small><br>
+        You may need to contact the CRA</h2>
+      <p>Call the non-resident business and corporation phone line to determine where to send your payment.</p>
+      <ul class="list-unstyled" data-ajax-replace="https://www.canada.ca/en/revenue-agency/corporate/contact-information.html#int-ph-02">
+        <li><a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information.html#int-02">CRA non-resident budsiness and corporation phone number</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="ff-results" class="hidden">
+    <h2 tabindex="0">Your results</h2>
+    <!--Payment alerts //-->
+    <section>
+      <div class="alert alert-info alert-hide-reset hidden" id="instal-alert">
+        <h3>Making instalment payments</h3>
+        <p>Some individuals and most businesses must pay their current-year taxes in periodic instalments.</p>
+        <p>For general information about instalment payments go to: <a id="instal-indv" class="hidden alert-hide-reset"  href="https://www.canada.ca/en/revenue-agency/services/payments-cra/individual-payments/income-tax-instalments.html" target="_blank" rel="noreferrer noopener">Instalment payments for individuals<sup class="fas fa-external-link-alt mrgn-lft-sm"><span class="wb-inv"> (opens in a new window)</span></sup></a><a href="/cap/corporate-instalments/index.html" id="instal-corp" class="alert-hide-reset hidden">Instalment payments for corporations<sup class="fas fa-external-link-alt mrgn-lft-sm"><span class="wb-inv"> (opens in a new window)</span></sup></a><a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/pay-instalment.html" id="instal-gst" class="alert-hide-reset hidden">Instalment payments for GST/HST<sup class="fas fa-external-link-alt mrgn-lft-sm"><span class="wb-inv"> (opens in a new window)</span></sup></a></p>
+      </div>
+      <div class="alert alert-info alert-hide-reset hidden" id="covid-alert">
+        <h3>A COVID-19 benefit or subsidy payment arrangement requires approval</h3>
+        <p>You will need to contact the <span id="covid-pa-indv" class="alert-hide-reset hidden">collections line for individuals at <strong>1-833-253-7615</strong></span><span id="covid-pa-busn" class="alert-hide-reset hidden">collections business line at <strong>1-833-615-2087</strong></span> if you need to make a payment arrangement to repay this COVID-19 benefit or subsidy.</p>
+      </div>
+      <div class="alert alert-info alert-hide-reset hidden" id="nomulti-alert">
+        <h3>Contact the CRA to set up a payment arrangement</h3>
+        <p>If you wish to make multiple payments to pay this amount, you will need to contact the CRA to <a href="https://www.canada.ca/en/revenue-agency/services/payments-cra/payment-arrangements.html#toc1">advise us that you want to set up a payment arrangement</a>.</p>
+      </div>
+	<div class="alert alert-info alert-hide-reset hidden" id="benefit-alert">
+        <h3>Offsetting your benefit debit with a future payment</h3>
+        <p>You may be able pay a benefit debt (overpayment) with a future benefit payment or refund. </p>
+		<p>For more information, go to <a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/balance-owing-benefits-overpayment.html">Balance owing on benefit overpayments</a>. </p>
+      </div>   
+    </section>
+    
+    <!--Payment types //-->
+    <section id="bank-account-pymnt" class="ff-answers">
+      <h3><span class="fas fa-university fa-fw mrgn-rght-sm"></span>Bank account</h3>
+  <div id="bank-account-online" class="row ff-answers ">
+        <div  class="col-xs-11 col-xs-offset-1">
+          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
+            <header class="panel-heading">
+              <h4 class="panel-title">Online banking</h4>
+            </header>
+            <div class="panel-body">
+		 <ul class="fa-ul lst-spcd" role="presentation" data-ajax-append="online-banking.html#pt-1"></ul>   
+              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link" href="online-banking.html">Using your bank or credit union website or app</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+ <div id="bank-account-cra" class="row ff-answers ">
+        <div  class="col-xs-11 col-xs-offset-1">
+          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
+            <header class="panel-heading">
+              <h4 class="panel-title">Schedule one or more future payment(s) in CRA My Account, My Business Account, or Represent a Client</h4>
+        </header>
+            <div class="panel-body">
+		     <ul class="fa-ul lst-spcd" role="presentation" data-ajax-append="scheduled-withdrawal.html#pt-1"></ul> 
+             <!-- <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> Usually the <strong>same day</strong> (if scheduled at least 5 business days in advance)</p>//-->
+              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link"  href="scheduled-withdrawal.html">Using pre-authorized debit (schedule a withdrawal)</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+	    
+      <div id="bank-account-counter-cdn" class="row ff-answers ">
+        <div  class="col-xs-11 col-xs-offset-1">
+          <div  class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
+            <header class="panel-heading">
+              <h4 class="panel-title">Counter (teller) service at bank or credit union in Canada</h4>
+            </header>
+            <div class="panel-body">
+        
+		    <ul class="fa-ul lst-spcd" role="presentation" data-ajax-append="teller.html#pt-1">
+<li><span class="fa-li fas fa-file-invoice fa-lg mrgn-rght-sm"></span>You will need a remittance voucher</li>	    
+		    </ul> 
+		    <!--<p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> the <strong>same day</strong> it is paid (stamped by employee)</p>//-->
+              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link"  href="teller.html">At the counter (teller) of a bank or credit union</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+	  <div id="bank-account-atm" class="row ff-answers ">
+        <div  class="col-xs-11 col-xs-offset-1">
+          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
+            <header class="panel-heading">
+              <h4 class="panel-title">ATM of your bank or credit union</h4>
+            </header>
+            <div class="panel-body">
+		    <ul class="fa-ul lst-spcd" role="presentation" data-ajax-append="atm.html#pt-1"></ul> 
+              <!--<p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> within <strong>1 to 2 business days</strong></p>//-->
+              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link"  href="atm.html">At your bank or credit union's ATM</a></p>
+            </div>
+          </div>
+        </div>
+      </div>    
+      <div id="bank-account-counter-int" class="row ff-answers ">
+        <div  class="col-xs-11 col-xs-offset-1">
+          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
+            <header class="panel-heading">
+              <h4 class="panel-title">Wire transfer at a foreign bank or credit union</h4>
+            </header>
+            <div class="panel-body">
+            
+		 <ul class="fa-ul lst-spcd" role="presentation" data-ajax-append="wire-transfer.html#pt-1">
+<li><span class="fa-li fas fa-file-invoice fa-lg mrgn-rght-sm"></span>You may need a remittance voucher</li>
+			 
+		 </ul> 
+		    <!--  <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> the <strong>same or next business day</strong></p>//-->
+          <p><span class="h4">Learn how to pay:</span> <a class="stretched-link"  href="wire-transfer.html">At a foreign bank or credit union</a></p>
+        </div>
+          </div>
+        </div>
+      </div>
 
-<section>
-<h2>Example 1</h2>
-<p>With session storage to remember last tab viewed. (Default behaviour)</p>
-<div class="wb-tabs">
-   <div class="tabpanels">
-       <details id="details-panel1" open="open">
-             <summary>Example 1</summary>
-<p>
-<h2>Large radio buttons target with explicit labels</h2>
-<fieldset class="gc-chckbxrdio">
-<legend>Which is your favorite pet?<a href="#details-panel3">Example 3</a></legend>
-	<ul class="list-unstyled lst-spcd-2">
-		<li class="radio">
-			<input type="radio" name="animal" id="animal-1">
-			<label for="animal-1">Dog</label>
-		</li>
-		<li class="radio">
-			<input type="radio" name="animal" id="animal-2">
-			<label for="animal-2">Cat</label>
-		</li>
-		<li class="radio">
-			<input type="radio" name="animal" id="animal-3">
-			<label for="animal-3">Rat</label>
-		</li>
-	</ul>
-</fieldset>
-</p>
-</details>
-<details id="details-panel2">
-<summary>Example 2</summary>
-<p>
-<ul>
-  <li><a href="https://wet-boew.github.io/GCWeb/index-fr.html">Link 1</li>
-  <li> <a href="https://wet-boew.github.io/GCWeb/index-en.html">Link 2</li>
-</ul>
-</p>
-</details>
-<details id="details-panel3">
-<summary>Example 3</summary>
-<p>
-It is needless, however, to prove that the Norsemen could have reached
-America in their ships. The voyages from Iceland to Greenland which we
-know they made continually for four hundred years were just as arduous
-as a further voyage from Greenland to the coast of Canada.
-</p>
-</details>
-</div>
-</div>
-</section>
-<section class="pagedetails">
-	<h2 class="wb-inv">Page details</h2><dl id="wb-dtmd">
-	<dt>Date modified:</dt>
-	<dd><time property="dateModified">2015-10-03</time></dd>
-</dl>
-</section>
+    
+
+    
+     
+    </section>
+
+    <section id="debit-card-pymnt" class="ff-answers">
+      <h3><span class="fas fa-credit-card fa-fw mrgn-rght-sm"></span>Debit card (Interac Debit, Visa Debit, or Debit Mastercard)</h3>
+      <div class="row ff-answers " id="debit-card-cra" >
+        <div  class="col-xs-11 col-xs-offset-1">
+          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
+            <header class="panel-heading">
+              <h4 class="panel-title">One-time payment through CRA secure online services</h4>
+        </header>
+            <div class="panel-body">
+		    <ul class="fa-ul lst-spcd" role="presentation" data-ajax-append="debit-cra.html#pt-1"></ul> 
+              <!--<p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> Usually the <strong>same or next business day</strong></p>//-->
+          <p><span class="h4">Learn how to pay:</span> <a class="stretched-link"  href="debit-cra.html">Using CRA's My Payment service</a></p>
+        </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ff-answers " id="debit-card-third" >
+        <div  class="col-xs-11 col-xs-offset-1">
+          <div  class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
+            <header class="panel-heading">
+              <h4 class="panel-title">Third-party service provider </h4>
+        </header>
+            <div class="panel-body">
+             <!-- <div class="alert alert-info alert-hide-reset third-party-alert hidden">
+                <p>Most third-party providers will not be able to process this payment.</p>
+              </div>-->
+		    
+        
+             <ul class="fa-ul lst-spcd" role="presentation" data-ajax-append="third-party.html#pt-1">
+<li><span class="fa-li fa-lg"><span class="fas fa-dollar-sign"></span></span>The provider will charge service fees</li>
+		     
+	     </ul> 
+
+              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link"  href="third-party.html">Using a third-party service provider</a></p>
+        </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ff-answers " id="debit-card-canadapost" >
+        <div  class="col-xs-11 col-xs-offset-1">
+          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
+            <header class="panel-heading">
+              <h4 class="panel-title">Canada Post retail location with a QR code </h4>
+            </header>
+            <div class="panel-body">
+         
+             <ul class="fa-ul lst-spcd" role="presentation" data-ajax-append="canada-post.html#pt-1">
+<li><span class="fa-li fa-lg"><span class="fas fa-dollar-sign"></span></span>Canada Post will charge service fees</li>
+		     
+	     </ul> 
+
+              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link"  href="canada-post.html">At a Canada Post retail location</a></p>
+        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ <section id="online-transfer-pymnt" class="ff-answers">
+      <h3><span class="fas fa-exchange-alt fa-fw mrgn-rght-sm"></span>Online money transfer (e.g. PayPal)</h3>
+      <div class="row ff-answers " >
+        <div  class="col-xs-11 col-xs-offset-1">
+          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
+            <header class="panel-heading">
+              <h4 class="panel-title">Third-party service provider
+			  </header>
+            <div class="panel-body">
+
+          
+		   <ul class="fa-ul lst-spcd" role="presentation" data-ajax-append="third-party.html#pt-1">
+<li><span class="fa-li fa-lg"><span class="fas fa-dollar-sign"></span></span>The provider will charge service fees</li>
+			   
+		   </ul> 
+
+              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link" href="third-party.html">Using a third-party service provider</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	  
+    <section id="credit-card-pymt" class="ff-answers">
+      <h3><span class="far fa-credit-card fa-fw mrgn-rght-sm"></span>Credit card</h3>
+      <div class="row">
+        <div  class="col-xs-11 col-xs-offset-1">
+          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
+            <header class="panel-heading">
+              <h4 class="panel-title">Third-party service provider</h4>
+        </header>
+            <div class="panel-body">
+             
+		
+		   <ul class="fa-ul lst-spcd" role="presentation" data-ajax-append="third-party.html#pt-1">
+<li><span class="fa-li fa-lg"><span class="fas fa-dollar-sign"></span></span>The provider will charge service fees</li>
+			   
+		   </ul> 
+
+              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link"  href="third-party.html">Using a third-party service provider</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	 <section id="cheque-pymnt" class="ff-answers">
+      <h3><span class="fas fa-money-check-alt fa-fw mrgn-rght-sm"></span>Cheque</h3>
+      <div class="row ff-answers " id="cheque-order-stamped" >
+        <div  class="col-xs-11 col-xs-offset-1">
+          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
+            <header class="panel-heading">
+              <h4 class="panel-title">Mail delivery</h4>
+            </header>
+            <div class="panel-body">
+		
+             <ul class="fa-ul lst-spcd" role="presentation" data-ajax-append="mail.html#pt-1">
+<li><span class="fa-li fa-lg"><span class="fas fa-file-invoice"></span></span>You may need a remittance voucher</li>
+		     
+	     </ul> 
+
+              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link" href="mail.html">By mail</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cash-pymnt" class="ff-answers">
+      <h3><span class="fas fa-money-bill-wave fa-fw mrgn-rght-sm"></span>Cash</h3>
+      <div class="row ff-answers ">
+        <div  class="col-xs-11 col-xs-offset-1">
+          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
+            <header class="panel-heading">
+              <h4 class="panel-title">Canada Post retail location with a QR code</h4>
+            </header>
+            <div class="panel-body">
+	
+             <ul class="fa-ul lst-spcd" role="presentation" data-ajax-append="canada-post.html#pt-1">
+<li><span class="fa-li fa-lg"><span class="fas fa-dollar-sign"></span></span>Canada Post will charge service fees</li>
+		     
+	     </ul> 
+
+              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link" href="canada-post.html">At a Canada Post retail location</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <section id="wire-transfer-pymnt" class="ff-answers">
+      <h3><span class="fas fa-fax fa-fw mrgn-rght-sm"></span>Wire transfer</h3>
+      <div class="row ff-answers" >
+        <div  class="col-xs-11 col-xs-offset-1">
+          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
+            <header class="panel-heading">
+              <h4 class="panel-title">Wire transfer at a foreign bank or credit union</h4>
+            </header>
+            <div class="panel-body">
+		 
+              <ul class="fa-ul lst-spcd" role="presentation" data-ajax-append="wire-transfer.html#pt-1">
+<li><span class="fa-li fa-lg"><span class="fas fa-file-invoice"></span></span>You may need a remittance voucher</li>
+		      
+	      </ul> 
+		    <!-- <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> the <strong>same or next business day</strong></p>//-->
+              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link" href="wire-transfer.html">At a foreign bank or credit union</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+   
+
+    <div class="alert alert-info ff-answers" id="collections-alert">
+      <h3>Debt that is in collections</h3>
+      <p>If you received a notice that your debt is in collections, and you have not already spoken to someone at the CRA, you should <a href="/cap/unable-pay/call-us-about-debt.html">call us if you can't pay in full or on time</a> before making a payment.</p>
+    </div>
+    <div class="alert alert-warning">
+      <h2 class="h3">The CRA never accepts certain payment methods</h2>
+      <div data-ajax-replace="/cap/make-payment/index.html#not-accepted"></div>
+     
+    
+    </div>
+  </div>
+  
+  <!--<div class="owner">
+               <p>From:</p>
+               <ul class="list-inline">
+                  <li><a href="./cra.html">Canada Revenue Agency</a></li>
+               </ul>
+
+            </div>//-->
+  <div id="def-preFooter"></div>
+  <!-- Write closure template --> 
+  <script type="text/javascript">
+            var defPreFooter = document.getElementById("def-preFooter");
+            defPreFooter.outerHTML = wet.builder.preFooter({
+            dateModified: "2024-02-28",
+            showPostContent: true,
+            showFeedback: true,
+            showShare: true
+            });
+         </script> 
+</main>
+<div id="def-footer"> </div>
+<!-- Write closure template --> 
+<script type="text/javascript">
+         var defFooter = document.getElementById("def-footer");
+         defFooter.outerHTML = wet.builder.footer({
+         showFooter: true,
+         showFeatures: true
+         });
+      </script> 
+<!-- Write closure template --> 
+<script type="text/javascript">
+         document.write(wet.builder.refFooter({
+         }));
+      </script> 
+<script src="https://cra-proto.github.io/cap/js/feedback-banner.js"></script>
+</body>
+</html>
